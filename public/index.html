@@ -6,17 +6,94 @@
     <title>FEC Demo</title>
   </head>
   <body>
+    <div id="SteamHeader">
+      <div class="content">
+        <div class="logo">
+          <div class="logo_holder">
+            <img src="http://www.iconarchive.com/download/i75262/cornmanthe3rd/metronome/Other-steam-red.ico" width="115" height="44" >
+          </div>
+        </div>
+        <div class="supernav">
+          <div class="menuitem">Store</div>
+          <div class="menuitem">Community</div>
+          <div class="menuitem">About</div>
+          <div class="menuitem">Support</div>
+        </div>
+        <div class="global_actions">
+          <div class="global_actions_menu">
+            <div class="installSteamButton">
+              <div class="installSteam">Install sTeeM</div>
+            </div>
+            <div class="loginButton">login</div>
+            <div>language: KindofEnglishLatin</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="store_header">
+      <div class="store_content">
+        <div class="store_nav_area">
+          <div class="store_nav_bg">
+            <div class="store_nav">
+              <div class="tab">
+                <span class="pulldown">
+                  <div class="centerd_content">Your Store</div>
+                </span>
+              </div>
+              <div class="tab">
+                <span class="pulldown">
+                  <div class="centerd_content">Games</div>
+                </span>
+              </div>
+              <div class="tab">
+                <span class="pulldown">
+                  <div class="centerd_content">Software</div>
+                </span>
+              </div>
+              <div class="tab">
+                <span class="pulldown">
+                  <div class="centerd_content">Hardware</div>
+                </span>
+              </div>
+              <div class="tab">
+                <span class="pulldown">
+                  <div class="centerd_content">Videos</div>
+                </span>
+              </div>
+              <div class="tab">
+                <span class="pulldown">
+                  <div class="centerd_content">News</div>
+                </span>
+              </div>
+              <div class="search_area">
+                <div id="store_search">
+                  <form id="searchform">
+                    <div class="searchbox">
+                      <input type="text" name="term" class="default">
+                      <div class="store_search_link"></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="Gallery"></div>
     <div id="AddToCart"></div>
     <div id="MoreLikeThis"></div>
-    <div id="Reviews"></div>
+    <div id="reviews"></div>
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3004/bundle.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://localhost:3004/style.css">
+    <!-- <script src="http://localhost:3001/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/style.css">
+    <script src="http://localhost:3002/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3002/style.css"> -->
+    <script src="http://ec2-13-57-249-121.us-west-1.compute.amazonaws.com/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://ec2-13-57-249-121.us-west-1.compute.amazonaws.com/style.css">
+    <script src="http://ec2-54-215-240-119.us-west-1.compute.amazonaws.com/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://ec2-54-215-240-119.us-west-1.compute.amazonaws.com/style.css">
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(

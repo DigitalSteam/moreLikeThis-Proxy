@@ -1,13 +1,196 @@
-#Info {
-  display: block;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-#CountDown {
-  margin-left: 5px;
+#MoreLikeThis {
+  display: flex;
+  justify-content: center;
+}
+
+#AddToCart {
+  display: flex;
+  justify-content: center;
+}
+
+#SteamHeader {
+  background-color: #171a21;
+  min-width: 940px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  padding-right: 16px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  height: 104px;
+  margin: 0px auto;
+}
+
+.logo {
+  float: left;
+  padding-top: 30px;
+  margin-right: 40px;
+  width: 176px;
+  height: 44px;
+}
+
+.menuitem {
+  display: block;
+  position: relative;
+  padding-top: 45px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-bottom: 7px;
+  line-height: 16px;
+  float: left;
+  font-size: 14px;
+  color: #b8b6b4;
+  text-transform: uppercase;
+}
+
+.global_actions {
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  height: 21px;
+  line-height: 21px;
+  color: #b8b6b4;
+  font-size: 11px;
+  z-index: 401;
+}
+
+.global_actions_menu {
+  line-height: 24px;
+  vertical-align: top;
+  display: flex;
+  flex-direction: row;
+}
+
+.installSteamButton {
   display: inline-block;
+  position: relative;
+  height: 21px;
+  line-height: 24px;
+  margin-right: 5px;
 }
 
-#Related {
-  margin: 10%;
+.installSteam {
+  background-color: #5c7e10;
+  padding: 3px;
+  border-radius: 3px;
+  width: 80px;
+  text-align: center;
+}
+
+.loginButton {
+  padding: 0 10px;
+}
+
+.store_header {
+  padding-left: 0;
+  padding-right: 0;
+  height: 66px;
+  margin-bottom: 16px;
+}
+
+.store_content {
+  height: 66px;
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+  z-index: 300;
+  border-radius: 3px;
+}
+
+.store_nav_area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 24px;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.store_nav_bg {
+  background: rgba(62, 126, 167, 0.8);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  height: 35px;
+  margin: 7px 0;
+}
+
+.tab {
+  border-right: 1px solid rgba(16, 21, 25, 0.3);
+  padding: 0 28px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  float: left;
+  height: 35px;
+}
+
+.centered-content {
+  vertical-align: default;
+}
+
+.pulldown {
+  padding-right: 7px;
+  color: #d9dadd;
+  font-size: 13px;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Motiva Sans", Sans-serif;
+}
+
+#store_search {
+  float: right;
+  padding: 3px 4px 2px;
+  height: 30px;
+}
+
+form {
   display: block;
+}
+
+.searchbox {
+  background-image: none;
+  background-color: #316282;
+  border-radius: 3px;
+  border: 1px solid rgba( 0, 0, 0, 0.3);
+  box-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.2);
+  color: #fff;
+  margin-bottom: 0px;
+  outline: none;
+  height: 27px;
+  padding: 0px 6px;
+  color: #a6a5a2;
+  width: 216px;
+  height: 30px;
+  position: relative;
+  z-index: 150;
+  cursor: text;
+}
+
+.default {
+  color: #0e1c25;
+  font-size: 14px;
+  margin-top: 1px;
+  text-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.1);
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+}
+
+.store_search_link {
+  position: absolute;
+  right: 2px;
+  top: 0;
+}
+
+.store_search_link {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1px;
+  right: -1px;
 }
